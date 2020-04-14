@@ -1,4 +1,6 @@
 import Koa from 'koa'
+import koaRoute from 'koa-route'
+
 
 
 
@@ -10,8 +12,11 @@ const colors = [
 
 const app = new Koa()
 
-app.use(async ctx => {
+
+const listColors = async ctx => {
   ctx.body = colors
-})
+}
+
+app.use(koaRoute.get('/colors', listColors))
 
 app.listen(3000)
