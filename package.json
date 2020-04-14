@@ -1,0 +1,37 @@
+{
+  "name": "colorcode-api",
+  "version": "1.0.0",
+  "description": "colorcode-api makes you happy",
+  "main": "out/index.js",
+  "scripts": {
+    "dev": "nodemon",
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reergymerej/start-node-typescript.git"
+  },
+  "author": "Jeremy Greer <jex.grizzle@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reergymerej/start-node-typescript/issues"
+  },
+  "homepage": "https://github.com/reergymerej/start-node-typescript#readme",
+  "devDependencies": {
+    "@types/jest": "^25.1.2",
+    "@types/node": "^13.7.1",
+    "@typescript-eslint/eslint-plugin": "^2.28.0",
+    "@typescript-eslint/parser": "^2.28.0",
+    "eslint": "^6.8.0",
+    "jest": "^25.1.0",
+    "nodemon": "^2.0.2",
+    "ts-jest": "^25.3.1",
+    "typescript": "^3.7.5",
+    "typescript-eslint": "^0.0.1-alpha.0"
+  },
+  "dependencies": {
+    "koa": "^2.11.0"
+  }
+}
