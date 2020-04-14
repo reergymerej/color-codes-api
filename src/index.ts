@@ -2,12 +2,7 @@ import Koa from 'koa'
 import koaRoute from 'koa-route'
 import bodyParser from 'koa-bodyparser'
 
-
-
-type Color = {
-  id: number;
-  value: string;
-}
+import { Color, AddColorReqDTO, GetColorsResDTO } from './types'
 
 const colors: Color[] = [
   {id: 1, value: 'red'},
@@ -18,11 +13,8 @@ const app = new Koa()
 app.use(bodyParser())
 
 const listColors = async (ctx: Koa.Context) => {
-  ctx.body = colors
-}
-
-type AddColorReqDTO = {
-  value: string;
+  const body: GetColorsResDTO = colors
+  ctx.body = body
 }
 
 const addColor = async (ctx: Koa.Context) => {
